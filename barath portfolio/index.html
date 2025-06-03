@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Three.js (required by Vanta) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+<!-- Vanta.js Globe Effect -->
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>barath portfolio</title>
+</head>
+<body>
+  <div id="vanta-bg">
+    <header>
+      <h1>Welcome to My Portfolio</h1>
+    </header>
+    <main>
+      <section>
+        <h2>BARATH S</h2>
+        <h3>UI/UX design & (frontend)web developer</h3>
+        <div class="profile-container">
+          <div class="image-wrapper">
+            <img src="profile image.jpg" alt="Profile Photo" class="profile-image" />
+          </div>
+        </div>
+        <p>I’m a passionate and detail-oriented web designer with a focus on creating visually appealing and user
+                friendly websites. I love blending creativity with functionality to build digital experiences that not only look 
+                great but also work seamlessly across all devices.
+                 With a strong foundation in HTML, CSS, JavaScript, and design tools like Figma and Adobe XD, I enjoy turning 
+                ideas into fully responsive, interactive designs. Whether it's crafting wireframes, building prototypes, or 
+                collaborating with developers, I’m always eager to learn, adapt, and create.</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Barath. All rights reserved.</p>
+    </footer>
+  </div>
+    <script>
+  // Animate profile image on page load
+  window.onload = function () {
+    const image = document.querySelector('.profile-image');
+    image.classList.add('zoom-in');
+  };
+</script>
+<script>
+  VANTA.GLOBE({
+    el: "#vanta-bg",
+    mouseControls: true,
+    touchControls: true,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.0,
+    scaleMobile: 1.0,
+    color: 0x00ff75,
+    backgroundColor: 0x0f1117
+  });
+</script>
+</body>
+</html>
